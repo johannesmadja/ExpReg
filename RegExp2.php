@@ -11,7 +11,7 @@ $str = <<<Text
 123.456.7890
 Text;
 
-$regexp = "/(\(?\d{3}\)?.)?\d{3}.\d{4}/";
+$regexp = "/(\(?\d{3}\)?[- .])?\d{3}[- .]\d{4}/";
 
 preg_match_all($regexp, $str, $matches);
 print_r($matches);

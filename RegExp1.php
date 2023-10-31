@@ -14,6 +14,7 @@ brian_wilson@yahoo.uk
 Text;
 
 $regexp = "/[\w.%]+@\w+\.\w{2,3}/";
+// $regexp = "/[\w.%]+@\w+\.\w+/";
 
 preg_match_all($regexp, $str, $matches);
 print_r($matches);
